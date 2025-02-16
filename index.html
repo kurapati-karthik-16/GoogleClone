@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 0.911);
+
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-image: url(wallpaper.jpeg);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center {
+            width: 70vw;
+            height: 500px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .icon{
+            color: black;
+            font-size: 25px;
+            margin: 0px 5px;
+
+        }
+
+        .inputgrp {
+            display: flex;
+            background-color: white;
+            width: 80%;
+            border-radius: 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+
+        }
+
+        .textfield {
+            outline: none;
+            font-size: 25px;
+            border: none;
+            padding: 10px;
+            width: 700px;
+
+        }
+        .dots{
+            color: white;
+           position: relative;
+            left: 40px;
+            top: 0px;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        .circle {
+            width: 60%;
+            height: 60%;
+            background-color: rgba(241, 126, 233, 0.871);
+            border-radius: 50%;
+         margin-bottom: 10px;
+         display: flex;
+        
+         justify-content: center;
+         align-items: center;
+
+        }
+
+        .favcard{
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+       
+
+        
+       
+        .insta {
+            width: 80%;
+            border-radius: 50%;
+            
+        }
+
+        .favlist {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+        
+
+        .favcard:hover {
+            border: 1px solid rgba(204, 198, 198, 0.389);
+            cursor: pointer;
+            background-color: rgba(218, 217, 217, 0.544);
+
+            .dots{
+                opacity: 1;
+            }
+        }
+        
+        .top-right {
+            width: 200px;
+            height: 50px;
+             position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 18px;
+            color: rgb(48, 46, 46);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .dotts{
+            display: flex;
+            gap: 7px;
+      
+        }
+        .grid{
+            width: 0px;
+           
+
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+          
+            
+        }
+        .right-text{
+    font-size: 18px;
+  
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <img src="g" alt="" width="40%" style="margin-bottom: 30px;">
+            <div class="inputgrp">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <form action="https://www.google.com/search?">
+                    <input type="text" class="textfield" placeholder="Search Google Or Type a URL" name="q"
+                        style="color: black;">
+                </form>
+                <i class="fa-solid fa-microphone icon"></i>
+                <i class="fa-solid fa-camera icon"></i>
+            </div>
+
+            <div class="favlist">
+                <div class="favcard">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png"
+                            class="insta" alt="">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="favcard">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="figma-logo.jpeg"
+                            class="Figma insta" alt="">
+                    </div>
+                    <p>Figma</p>
+                </div>
+                <div class="favcard">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="Chatgpt-logo.jpeg" class="ChatGpt insta" alt="">
+                    </div>
+                    <p>ChatGpt</p>
+                </div>
+                <div class="favcard">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="spotify-logo.jpeg" class="Spotify insta" alt="">
+                    </div>
+                    <p>Spotify</p>
+                </div>
+                <div class="favcard">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="twitter-logo.jpeg" opac class="Twitter insta" alt="">
+                    </div>
+                    <p>Twitter</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="top-right">
+        <p class="right-text">Gmail</p>
+        <p class="right-text">Images</p>
+        <div class="dotts">
+            <i class="fa-solid fa-ellipsis-vertical grid"></i>
+            <i class="fa-solid fa-ellipsis-vertical grid"></i>
+            <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        </div>
+        
+        <img src="158800723_3aa2d0a18d_o.jpg"  height="40px" class="profile-pic">
+           
+    </div>
+</body>
+
+</html>
